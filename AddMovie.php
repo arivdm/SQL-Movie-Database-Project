@@ -66,10 +66,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 if (isset($_POST["Send"])) {
-    $server = "tcp:techniondbcourse01.database.windows.net,1433";
-    $user = "van0ari";
-    $pass = "Qwerty12!";
-    $database = "van0ari";
+    $server = "";
+    $user = "";
+    $pass = "";
+    $database = "";
     $c = array("Database" => $database, "UID" => $user, "PWD" => $pass);
     sqlsrv_configure('WarningsReturnAsErrors', 0);
     $conn = sqlsrv_connect($server, $c);
